@@ -10,7 +10,20 @@ public class Abbreviate {
      */
     public static String abbreviate(String string) {
         // TODO: Write this method.
-        return null;
+
+
+   string = string.replaceAll("e","");
+    string =string.replaceAll("o","");
+        string =string.replaceAll("u","");
+        string =string.replaceAll("i","");
+        string =string.replaceAll("a","");
+        string = string.replaceAll("E","");
+        string =string.replaceAll("O","");
+        string =string.replaceAll("U","");
+        string =string.replaceAll("I","");
+        string =string.replaceAll("A","");
+
+        return string;
     }
 
     public static void main(String[] args) {
