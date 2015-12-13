@@ -1,5 +1,7 @@
 package radiobutton;
 
+import javax.swing.*;
+
 /**
  * Represents a group of "radio buttons": toggle buttons for which exactly one is selected
  * at a given time. If a different button is selected, the previously-selected button is
@@ -8,8 +10,10 @@ package radiobutton;
  * Buttons are numbered from 0 to one less than the number of buttons. For example, if the
  * button group has 4 buttons, they are numbered 0, 1, 2, and 3.
  */
-public class RadioButtonGroup {
+public class RadioButtonGroup extends JToggleButton{
 
+    JRadioButton button1 = new JRadioButton("1",false);
+    JRadioButton button2 = new JRadioButton("2",false);
     /**
      * Creates a group of radio buttons.
      *
@@ -22,6 +26,9 @@ public class RadioButtonGroup {
      */
     public RadioButtonGroup(int numButtons, int initial) {
         // TODO: Implement this method.
+
+
+
     }
 
     /**

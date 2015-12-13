@@ -1,5 +1,6 @@
 package states;
 
+import java.util.ArrayList;
 import java.util.Map;
 
 public class USStates {
@@ -16,17 +17,26 @@ public class USStates {
      */
     public static Map<Character, Integer> countStatesByFirstLetter() {
         // TODO: Write this method.
-        return null;
+
+
+
+
+
+
     }
 
     public static void main(String[] args) {
         Map<Character, Integer> counts = countStatesByFirstLetter();
+
+
         // Do some simple tests.  Feel free to add your own.
         if (counts.size() != 26) throw new AssertionError();
         if (!counts.containsKey('A')) throw new AssertionError();
         if (counts.get('A') != 4) throw new AssertionError();
         if (!counts.containsKey('B')) throw new AssertionError();
         if (counts.get('B') != 0) throw new AssertionError();
+
+
     }
 
     public static final String[] STATE_NAMES = {
